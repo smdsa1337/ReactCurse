@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper{
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+
+.rm{
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.gay{
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+.loading-container {
+  margin-top: 100px;
+  text-align: center;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+.spinner {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url('http://i.imgur.com/oSHLAzp.png') center center;
+  background-size: contain;
+  transition-origin: 50% 50%;
+  animation: spinner 3s infinite alternate ease-in-out;
+}
+.spinner-center {
+  display: inline-block;
+  position: absolute;
+  margin-left: -100px;
+  width: 100px;
+  height: 100px;
+  background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+  background-size: contain;
+  content: '';
+}
+
+.loading-text {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 0.5em;
+}
